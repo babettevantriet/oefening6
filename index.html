@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" type="text/css" rel="stylesheet" />
+    <meta name="vieuwport" content= "width=device-width, initial-scale=1.0" /> 
+    <title>Gegroet</title>
+
+</head>
+<body>
+
+<h1>De '.this' functie</h1>
+
+<p>Ik heb hier gebruik gemaak van de this functie '.this'. Ik heb een variabele met een paar gegeven en door deze functie kan ik aangeven welke gegevens ik wil gebruiken. </p>
+
+<p id="naam"></p>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "Babette",
+  lastName : "van 't Riet",
+  id     : 345665432,
+  heleNaam : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+// Display data from the object:
+document.getElementById("naam").innerHTML = person.heleNaam();
+</script>
+
+</body>
+</html>
